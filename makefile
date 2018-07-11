@@ -9,3 +9,6 @@ start :  ;@echo "babel run..."; \
 
 publish : ;@echo "publish..."; \
           npm publish 
+
+lint : ;@echo "eslint..."; \
+       npm run eslint
