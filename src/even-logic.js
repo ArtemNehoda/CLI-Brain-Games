@@ -10,7 +10,7 @@ export const game = (userName) => {
   }
   const num = getRandomNum(1, 1000);
   const correctAnswer = isEvenNumber(num);
-  const userAnswer = actual(`Question : ${num}`);
+  const userAnswer = actual(`Question : ${num}\nYour answer:`);
   const gameOverString = `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
     \nLet's try again , ${userName}!`;
   if (correctAnswer === userAnswer) {
