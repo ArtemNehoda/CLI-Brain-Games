@@ -35,7 +35,8 @@
     "readline-sync": "^1.4.9"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-games.js"
   },
   "homepage": "https://github.com/ArtemNehoda/project-lvl1-s304#readme"
 }
