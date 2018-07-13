@@ -12,7 +12,7 @@ export const game = (userName) => {
   const correctAnswer = isEvenNumber(num);
   const userAnswer = actual(`Question : ${num}\nYour answer:`);
   const gameOverString = `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-      \nLet's try again , ${userName}!`;
+        \nLet's try again , ${userName}!`;
   if (correctAnswer === userAnswer) {
     three += 1;
     console.log('Correct!');
