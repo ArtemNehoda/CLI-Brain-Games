@@ -42,8 +42,9 @@ const gameInit = () => {
   const firstOperand = getRandomNumber();
   const secondOperand = getRandomNumber();
   const operator = getRandomOperator();
-  const answer = cdr(getResultCals(firstOperand, secondOperand, operator));
-  const question = car(getResultCals(firstOperand, secondOperand, operator));
+  const resultPair = getResultCals(firstOperand, secondOperand, operator);
+  const answer = cdr(resultPair);
+  const question = car(resultPair);
   return cons(question, answer);
 };
 
