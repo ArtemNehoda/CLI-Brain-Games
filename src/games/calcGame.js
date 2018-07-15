@@ -19,20 +19,20 @@ const getRandomOperator = () => {
   }
 };
 
-const getResultCals = (oneNumber, twoNumber, operand) => {
+const getResultCals = (firstOperand, secondOperand, operator) => {
   let answer = 0;
-  switch (operand) {
+  switch (operator) {
     case '+':
-      answer = oneNumber + twoNumber;
+      answer = firstOperand + secondOperand;
       break;
     case '-':
-      answer = oneNumber - twoNumber;
+      answer = firstOperand - secondOperand;
       break;
     case '*':
-      answer = oneNumber * twoNumber;
+      answer = firstOperand * secondOperand;
       break;
     default:
-      answer = (oneNumber / twoNumber).toFixed(2);
+      answer = (firstOperand / secondOperand).toFixed(2);
       break;
   }
   return answer;
