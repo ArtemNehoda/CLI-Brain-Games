@@ -1,4 +1,4 @@
-import { cons } from 'hexlet-pairs';
+import { cons, cdr, car } from 'hexlet-pairs';
 import start from '..';
 import { getRandomNumber } from '../utilFunc';
 
@@ -35,15 +35,15 @@ const getResultCals = (firstOperand, secondOperand, operator) => {
       answer = (firstOperand / secondOperand).toFixed(2);
       break;
   }
-  return answer;
+  return cons(`${firstOperand} ${operator} ${secondOperand}`, answer);
 };
 
 const gameInit = () => {
   const firstOperand = getRandomNumber();
   const secondOperand = getRandomNumber();
   const operator = getRandomOperator();
-  const answer = getResultCals(firstOperand, secondOperand, operator);
-  const question = `${firstOperand} ${operator} ${secondOperand}`;
+  const answer = cdr(getResultCals(firstOperand, secondOperand, operator));
+  const question = car(getResultCals(firstOperand, secondOperand, operator));
   return cons(question, answer);
 };
 
