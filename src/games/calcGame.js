@@ -1,37 +1,28 @@
-import { cons, cdr, car } from 'hexlet-pairs';
+import { cons } from 'hexlet-pairs';
 import start from '..';
-import { getRandomNumber } from '../utilFunc';
+import getRandomNumber from '../utilFunc';
 
 const gameDescription = 'What is the result of the expression?';
 
-const getRandomOperator = () => {
-  let rand = 1 + (Math.random() * 3);
-  rand = Math.floor(rand);
-  switch (rand) {
-    case 1:
-      return '+';
-    case 2:
-      return '-';
-    case 3:
-      return '*';
-    default:
-      return '/';
-  }
-};
-
-const getResultCals = (firstOperand, secondOperand, operator) => {
+const getResultCals = (firstOperand, secondOperand) => {
   let answer = 0;
-  switch (operator) {
-    case '+':
+  const caseNum = Math.floor(1 + (Math.random() * 3));
+  let operator = '';
+  switch (caseNum) {
+    case 1:
+      operator = '+';
       answer = firstOperand + secondOperand;
       break;
-    case '-':
+    case 2:
+      operator = '-';
       answer = firstOperand - secondOperand;
       break;
-    case '*':
+    case 3:
+      operator = '*';
       answer = firstOperand * secondOperand;
       break;
     default:
+      operator = '/';
       answer = (firstOperand / secondOperand).toFixed(2);
       break;
   }
@@ -41,11 +32,7 @@ const getResultCals = (firstOperand, secondOperand, operator) => {
 const gameInit = () => {
   const firstOperand = getRandomNumber();
   const secondOperand = getRandomNumber();
-  const operator = getRandomOperator();
-  const resultPair = getResultCals(firstOperand, secondOperand, operator);
-  const answer = cdr(resultPair);
-  const question = car(resultPair);
-  return cons(question, answer);
+  return getResultCals(firstOperand, secondOperand);
 };
 
 export default () => start(gameDescription, gameInit);
