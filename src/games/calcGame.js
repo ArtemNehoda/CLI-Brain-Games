@@ -1,9 +1,10 @@
 import { cons } from 'hexlet-pairs';
-import { start } from '..';
-import { getRandomNumber } from '../util/utilFunc';
+import start from '..';
+import { getRandomNumber } from '../utilFunc';
 
+const gameDescription = 'What is the result of the expression?';
 
-const getRandomOperand = () => {
+const getRandomOperator = () => {
   let rand = 1 + (Math.random() * 3);
   rand = Math.floor(rand);
   switch (rand) {
@@ -38,15 +39,12 @@ const getResultCals = (oneNumber, twoNumber, operand) => {
 };
 
 const gameInit = () => {
-  const oneNumber = getRandomNumber();
-  const twoNumber = getRandomNumber();
-  const operand = getRandomOperand();
-  const answer = getResultCals(oneNumber, twoNumber, operand);
-  const question = `${oneNumber} ${operand} ${twoNumber}`;
+  const firstOperand = getRandomNumber();
+  const secondOperand = getRandomNumber();
+  const operator = getRandomOperator();
+  const answer = getResultCals(firstOperand, secondOperand, operator);
+  const question = `${firstOperand} ${operator} ${secondOperand}`;
   return cons(question, answer);
 };
 
-export default () => {
-  const gameManual = 'What is the result of the expression?';
-  start(gameManual, gameInit);
-};
+export default () => start(gameDescription, gameInit);

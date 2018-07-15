@@ -1,18 +1,15 @@
 import { cons } from 'hexlet-pairs';
-import { start } from '..';
-import { getRandomNumber, findGcd } from '../util/utilFunc';
+import start from '..';
+import { getRandomNumber, findGcd } from '../utilFunc';
 
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const gameInit = () => {
-  const oneNumber = getRandomNumber();
-  const twoNumber = getRandomNumber();
-  const answer = findGcd(oneNumber, twoNumber);
-  const question = `${oneNumber} ${twoNumber}`;
+  const firstNumber = getRandomNumber();
+  const secondNumber = getRandomNumber();
+  const answer = findGcd(firstNumber, secondNumber);
+  const question = `${firstNumber} ${secondNumber}`;
   return cons(question, answer);
 };
 
-
-export default () => {
-  const gameManual = 'Find the greatest common divisor of given numbers.';
-  start(gameManual, gameInit);
-};
+export default () => start(gameDescription, gameInit);
