@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
+import game from '../games/braingame';
 
-console.log('Welcome to the Brain Games!');
-console.log('');
-const userName = readlineSync.question('What\'s your name?: ');
-console.log(`Hallo , ${userName}`);
+game();
