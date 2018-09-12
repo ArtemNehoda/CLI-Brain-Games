@@ -3,3 +3,5 @@
 [![Build Status](https://travis-ci.org/ArtemNehoda/project-lvl1-s340.svg?branch=master)](https://travis-ci.org/ArtemNehoda/project-lvl1-s340)
 
 https://asciinema.org/a/xZDm4g1MCFRNWboGP7soja35X
+
+https://asciinema.org/a/5nzyKCDiTSPsiViCl5infzRK0
