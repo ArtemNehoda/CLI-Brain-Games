@@ -3,10 +3,11 @@ import start from '..';
 import getRandomNumber from '../utilFunc';
 
 const gameDescription = 'What is the result of the expression?';
+const MAX_OPERATOR_CASE = 3;
 
 const getResultCals = (firstOperand, secondOperand) => {
   let answer = 0;
-  const caseNum = Math.floor(1 + (Math.random() * 3));
+  const caseNum = getRandomNumber(MAX_OPERATOR_CASE);
   let operator = '';
   switch (caseNum) {
     case 1:

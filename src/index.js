@@ -15,14 +15,14 @@ const printGameOver = (result, Answer, userName) => {
   console.log(`Let's try again, ${userName}`);
 };
 
-export default (gameDescription, getAnswer) => {
+export default (gameDescription, getDataGame) => {
   printWelcome();
   console.log('');
   printDescription(gameDescription);
   const userName = askName();
   printHallo(userName);
   for (let i = 0; i < gameCount; i++) {
-    const dataGame = getAnswer();
+    const dataGame = getDataGame();
     const rightAnswer = cdr(dataGame);
     const question = car(dataGame);
     console.log(`Question: ${question}`);

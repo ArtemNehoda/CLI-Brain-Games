@@ -5,9 +5,9 @@ import getRandomNumber from '../utilFunc';
 const gameDescription = 'Balance the given number.';
 
 const getBalanceNumber = (arr) => {
-  const localArr = arr;
-  const bigNum = Math.max(...arr);
-  const lowNum = Math.min(...arr);
+  const localArr = arr.slice(); // копирование массива в локальную константу
+  const bigNum = Math.max(...localArr);
+  const lowNum = Math.min(...localArr);
   const sortedArr = localArr.sort().slice(1, localArr.length - 1);
   if ((bigNum - lowNum) <= 1) {
     return localArr.sort();
@@ -16,7 +16,7 @@ const getBalanceNumber = (arr) => {
 };
 
 const gameInit = () => {
-  const question = String(getRandomNumber(100, 10000));
+  const question = String(getRandomNumber(1000));
   const answer = getBalanceNumber(question.split('')).join('');
   return cons(question, answer);
 };
