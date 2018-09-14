@@ -5,7 +5,7 @@ import getRandomNumber from '../utilFunc';
 const gameDescription = 'Balance the given number.';
 
 const getBalanceNumber = (arr) => {
-  const localArr = arr.slice(); // копирование массива в локальную константу
+  const localArr = arr.slice(); // copy array in local constant
   const bigNum = Math.max(...localArr);
   const lowNum = Math.min(...localArr);
   const sortedArr = localArr.sort().slice(1, localArr.length - 1);
