@@ -14,12 +14,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArtemNehoda/project-lvl1-s304.git"
+    "url": "git+https://github.com/ArtemNehoda/project-lvl1-s340.git"
   },
   "author": "Artem Nehoda",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ArtemNehoda/project-lvl1-s304/issues"
+    "url": "https://github.com/ArtemNehoda/project-lvl1-s340/issues"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -44,5 +44,5 @@
     "brain-progression": "dist/bin/brain-progression.js",
     "brain-prime": "dist/bin/brain-prime.js"
   },
-  "homepage": "https://github.com/ArtemNehoda/project-lvl1-s304#readme"
+  "homepage": "https://github.com/ArtemNehoda/project-lvl1-s340#readme"
 }
