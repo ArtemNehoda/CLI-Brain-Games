@@ -1,6 +1,6 @@
 {
   "name": "project-lvl1-artem",
-  "version": "2.3.8",
+  "version": "2.3.9",
   "description": "project1",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
