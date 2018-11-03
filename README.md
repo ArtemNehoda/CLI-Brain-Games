@@ -1,6 +1,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/9698a82de6076491a57f/maintainability)](https://codeclimate.com/github/ArtemNehoda/CLI-Brain-Games/maintainability)
 [![Build Status](https://travis-ci.org/ArtemNehoda/CLI-Brain-Games.svg?branch=master)](https://travis-ci.org/ArtemNehoda/CLI-Brain-Games)
 
+**Simple matematic brain-games**
+
 brain-even :           https://asciinema.org/a/xZDm4g1MCFRNWboGP7soja35X
 
 brain-calc :            https://asciinema.org/a/5nzyKCDiTSPsiViCl5infzRK0
