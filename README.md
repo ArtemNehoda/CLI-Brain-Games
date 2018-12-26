@@ -3,6 +3,8 @@
 
 **Simple matematic brain-games**
 
+> install: npm install -g project-lvl1-artem
+
 brain-even :           https://asciinema.org/a/xZDm4g1MCFRNWboGP7soja35X
 
 brain-calc :            https://asciinema.org/a/5nzyKCDiTSPsiViCl5infzRK0
